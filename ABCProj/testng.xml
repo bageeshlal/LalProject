@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+ <test name="Test">
+  	<parameter name="program" value="Spark"/> 
+  	<parameter name="searchContent" value="sample program"/>
+  	<parameter name="jsonUrl" value="http://program.abcradio.net.au/api/v1/programs/ppJj0E8g2R.json"/>
+  	<parameter name="fileName" value="src/ppJj0E8g2R.json"/>
+    <classes>
+   	  <class name="com.abc.tests.NewsTests"/>
+      <class name="com.abc.tests.RadioTests"/>
+      <class name="com.abc.tests.JsonTest"/>
+    </classes>
+  </test>
+  <!-- Afternoon test --> 
+  <test name = "Test2">
+  	<parameter name="jsonUrl" value="http://program.abcradio.net.au/api/v1/programs/ppxa2Amj2b.json"/>
+  	<parameter name="fileName" value="src/ppxa2Amj2b.json"/>
+  	<classes>
+  		<class name="com.abc.tests.JsonTest"/>
+  	</classes>
+  </test>
+  
+   <!-- Different environments --> 
+<!-- <test name = "Test3">
+  	<parameter name="jsonUrl" value="http://program.abcradio.net.au/api/v1/programs/ppJj0E8g2R.json"/>
+  	<parameter name="fileName" value="src/ppJj0E8g2R.json"/>
+  	<classes>
+  		<class name="com.abc.tests.JsonTest"/>
+  	</classes>
+  </test>-->
+</suite> 

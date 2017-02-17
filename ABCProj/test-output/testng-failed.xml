@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="program" value="Spark"/>
+    <parameter name="searchContent" value="sample program"/>
+    <classes>
+      <class name="com.abc.tests.RadioTests">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyUrlOnClickingListenNow"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.abc.tests.RadioTests -->
+      <class name="com.abc.tests.NewsTests">
+        <methods>
+          <include name="verifyContentPerArticle"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.abc.tests.NewsTests -->
+      <class name="com.abc.tests.JsonTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.abc.tests.JsonTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
