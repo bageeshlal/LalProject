@@ -28,7 +28,7 @@ public class ABCNewsBase {
 		subUrl = "news/";
 		videoUrl = "2017-02-09/weatherill-promises-to-intervene-dramatically/8254908";
 		imgUrl = " 2017-02-10/abc-open-pic-of-the-week/8256256";
-		//System.setProperty("webdriver.gecho.driver","C://Bageesh//Work//Selenium_Drivers//geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver","C://Bageesh//Work//Selenium_Drivers//geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		jse = (JavascriptExecutor)driver;
